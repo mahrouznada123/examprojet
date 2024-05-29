@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestion des Employés</title>
+    <link rel="stylesheet" type="text/css" href="exam.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Gestion des Employés</h2>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Téléphone</th>
+                    <th>Departement</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="form-container">
+        <form id="employeeForm">
+            <div class="form-group">
+                <label for="nom">Nom Employee</label>
+                <input type="text" id="nom" placeholder=" ">
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" placeholder=" ">
+            </div>
+            <div class="form-group">
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="text" id="telephone" placeholder=" ">
+            </div>
+            <div class="form-group">
+                <label for="departement">Département</label>
+                <input type="text" id="departement" placeholder=" ">
+            </div>
+            <button type="button" onclick="saveEmployee()">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
